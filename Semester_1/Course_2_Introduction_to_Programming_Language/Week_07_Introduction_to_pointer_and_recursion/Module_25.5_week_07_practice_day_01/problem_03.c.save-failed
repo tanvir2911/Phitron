@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+
+int whether_power_of_two(char s[])
+{
+    printf("%c\n",s[0]);
+
+}
+
+int main()
+{
+    char s[100];
+    scanf("%s",&s);
+    printf("%s\n",s);
+    int pow_of_two = whether_power_of_two(s);
+    if(pow_of_two == 1)
+        printf("YES\n");
+    else
+        printf("NO\n");
+
+    return 0;
+}

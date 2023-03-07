@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+
+char name()
+{
+    char s[100];
+    printf("Your Name is: ");
+    gets(s);
+    return s;
+}
+
+int main()
+{
+    //char x[100] = name();
+
+    printf("\nThe Name is %s\n",name());
+
+    return 0;
+}
+
