@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class Person{
+public:
+    string name;
+    Person *father, *mother;
+
+    void print_info()
+    {
+        cout<<"Name = "<<name<<"\n";
+        cout<<"Fathers name = "<<father->name<<"\n";
+        cout<<"Mothers name = "<<mother->name<<"\n";
+    }
+};
+
+int main()
+{
+    Person p;
+    p.name = "Tonmoy";
+    p.father.name = "Tafazzal";
+    p.mother.name = "Munni";
+
+    p.print_info();
+
+    return 0;
+}
