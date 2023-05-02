@@ -1,6 +1,28 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+/*
+time complexity = O(logn)
+
+iteration =>  array size
+    0     =>    n = n/(2^0)
+    1     =>    n/2 = n/(2^1)
+    2     =>    n/4 = n/(2^2)
+    3     =>    n/8 = n/(2^3)
+    .........................
+    .....................
+    .....................
+    k     => n/(2^k)
+
+
+now the iteration will stop at kth iteration and
+then our array size will be 1.
+so, we can say,
+            n/(2^k) = 1
+            n = 2^k
+            k = logn    // we can say it log 2 based n
+
+*/
 
 int main()
 {
