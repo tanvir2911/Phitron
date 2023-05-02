@@ -10,8 +10,6 @@ int main()
     for(int i=0;i<n;i++)
         cin>>a[i];
 
-    sort(a.begin(),a.end());
-
     int low=0, high=n-1;
     bool flag = 0;
     while(low<=high)
